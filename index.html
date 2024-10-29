@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Знаходження більшого числа</title>
+</head>
+<body>
+
+<h2>Знаходження більшого числа серед трьох</h2>
+
+<script>
+    let num1 = parseFloat(prompt("Введіть перше число:"));
+    let num2 = parseFloat(prompt("Введіть друге число:"));
+    let num3 = parseFloat(prompt("Введіть третє число:"));
+
+    let max; 
+
+    if (num1 >= num2 && num1 >= num3) {
+        max = num1;
+    } else if (num2 >= num1 && num2 >= num3) {
+        max = num2;
+    } else {
+        max = num3;
+    }
+
+    alert("Найбільше число: " + max);
+</script>
+
+</body>
+</html>
